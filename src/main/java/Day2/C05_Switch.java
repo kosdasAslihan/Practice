@@ -29,24 +29,23 @@ public class C05_Switch {
 
         String seviye = "";
 
-        if (puan >= 0 && puan < 1) {
+        if (puan >= 0 && puan <1){
             seviye = "KALDI";
         } else if (puan >= 1 && puan < 2) {
             seviye = "GECTI";
-        } else if (puan >= 2 && puan < 2.5) {
+        }else if (puan >= 2 && puan < 2.5) {
             seviye = "IYI";
-        } else if (puan >= 2 && puan < 2.5) {
-            seviye = "IYI";
-        } else if (puan >= 2.5 && puan < 3.5) {
+        }else if (puan >= 2.5 && puan < 3.5) {
             seviye = "UST";
-        } else if (puan >= 3.5 && puan <= 4) {
+        }else if (puan >= 3.5 && puan <= 4) {
             seviye = "HARIKA";
-        } else {
-            seviye = "GECERSİZ";
+        }else {
+            seviye = "GECERSIZ";
         }
-        switch (seviye){
+
+        switch (seviye) {
             case "KALDI":
-                System.out.println("F");
+                System.out.println("f");
                 break;
             case "GECTI":
                 System.out.println("D");
@@ -61,7 +60,7 @@ public class C05_Switch {
                 System.out.println("A");
                 break;
             default:
-                System.out.println("Gecerli bir not giriniz.");
+                System.out.println("Gecerli bir not giriniz");
                 break;
         }
 

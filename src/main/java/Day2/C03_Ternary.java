@@ -13,14 +13,13 @@ public class C03_Ternary {
         //expression ? (true) : (false);
 
         Scanner input = new Scanner(System.in);
-        System.out.println("Bir sayi giriniz:");
+        System.out.println("Bir sayi giriniz: ");
         int sayi = input.nextInt();
 
-        //1. Yol
+        //1.yol:
         Object sonuc = sayi % 2 == 0 ? "Cift Sayi" : sayi + 3;
-        System.out.println(sonuc);
 
-        //2. Yol
+        //2.yol:
         System.out.println(sayi % 2 == 0 ? "Cift Sayi" : sayi + 3);
     }
 }

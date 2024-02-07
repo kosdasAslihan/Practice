@@ -12,13 +12,14 @@ public class C04_NestedTernary {
         */
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Birinci sayiyi giriniz");
+
+        System.out.println("Birinci sayiyi giriniz: ");
         int sayi1 = scanner.nextInt();
 
-        System.out.println("Ikinci sayiyi giriniz");
+        System.out.println("Ikinci sayiyi giriniz: ");
         int sayi2 = scanner.nextInt();
 
-        Object sonuc = sayi1 == sayi2 ? ("Sayilar Esit") : (sayi1>sayi2 ? (sayi1*sayi1) : (sayi2*sayi2));
+        Object sonuc = sayi1 == sayi2 ? ("Sayilar Esit") : (sayi1 > sayi2 ? (sayi1 * sayi1) : (sayi2 * sayi2));
         System.out.println(sonuc);
 
     }

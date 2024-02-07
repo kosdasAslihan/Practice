@@ -14,17 +14,17 @@ public class C01_IfElse {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Birinci sayiyi giriniz:");
+        System.out.println("Birinci sayiyi giriniz: ");
         int sayi1 = input.nextInt();
 
-        System.out.println("Ikinci sayiyi giriniz:");
+        System.out.println("Ikinci sayiyi giriniz: ");
         int sayi2 = input.nextInt();
 
         if (sayi1 > 0 && sayi2 > 0) {
             System.out.println(sayi1 + sayi2);
         } else if (sayi1 < 0 && sayi2 < 0) {
             System.out.println(sayi1 * sayi2);
-        } else if ((sayi1 > 0 && sayi2 < 0) || (sayi1 < 0 && sayi2 < 0)) {
+        } else if ((sayi1>0 && sayi2<0) || (sayi1<0 && sayi2>0)) {
             System.out.println("Sayilarla islem yapilamiyor.");
         /*} else if (sayi1 * sayi2 < 0) {
             System.out.println("Islem yapilamiyor"); yukaridaki islem yerine bu islem de yazilabilirdi
@@ -32,5 +32,6 @@ public class C01_IfElse {
         }else {
             System.out.println("Yutan eleman");
         }
+
     }
 }
