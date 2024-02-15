@@ -23,9 +23,9 @@ public class C02_ForLoops {
             int sayi = input.nextInt();
 
             //1.yol
-            if (!(sayi % 10 == 7 && sayi % 10 == 9)) {
+            /*if (!(sayi % 10 == 7 && sayi % 10 == 9)) {
                 toplam = toplam + sayi; // toplam += sayi
-            }
+            }*/
             //2.yol
             if (sayi % 10 != 7 && sayi % 10 != 9) {
                 toplam = toplam + sayi; // toplam += sayi

@@ -13,22 +13,20 @@ public class C02_NestedIf {
                 + Numara 10'dan büyük ise konsola "Pozitif Sayı" yazdırın.
 
         */
-
         Scanner scanner = new Scanner(System.in);
         System.out.println("Bir sayi giriniz: ");
         int sayi = scanner.nextInt();
 
-        if (sayi<0){
+        if (sayi < 0) {
             System.out.println("Negatif");
         } else if (sayi == 0) {
             System.out.println("Sifir");
-        }else { //Sifirdan buyuk ise
-            if (sayi <10){
+        } else { //Sifirdan buyuk ise
+            if (sayi < 10) {
                 System.out.println("Rakam");
-            }else {
-                System.out.println("Pozitif");
+            } else {
+                System.out.println("Pozitif sayi");
             }
-
         }
 
         //Ek Sytnax Bilgisi
@@ -38,6 +36,5 @@ public class C02_NestedIf {
             System.out.println("Pozitif sayi");
             if ve else'den sonra tek satir yazilacaksa parantez kullanimi olmadan da calisir
             */
-
     }
 }

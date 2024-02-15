@@ -15,11 +15,9 @@ public class C04_WhileLoops {
 
         int sayi = 12;
 
-        while (sayi % 10 != 0) {
-
-            System.out.print(sayi+" ");
+        while (sayi %10 != 0) {
+            System.out.println(sayi + " ");
             sayi++;
-
         }
 
     }

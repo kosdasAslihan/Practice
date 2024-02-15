@@ -16,10 +16,10 @@ public class C03_Ternary {
         System.out.println("Bir sayi giriniz: ");
         int sayi = input.nextInt();
 
-        //1.yol:
-        Object sonuc = sayi % 2 == 0 ? "Cift Sayi" : sayi + 3;
+        //1.yol
+        Object sonuc = sayi % 2 == 0 ? "Cift sayi" : sayi + 3;
 
-        //2.yol:
-        System.out.println(sayi % 2 == 0 ? "Cift Sayi" : sayi + 3);
+        //2.yol
+        System.out.println(sayi % 2 == 0 ? "Cift sayi" : sayi + 3);
     }
 }

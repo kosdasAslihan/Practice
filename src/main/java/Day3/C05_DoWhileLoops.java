@@ -19,7 +19,6 @@ public class C05_DoWhileLoops {
         -->Girilen x sayısının toplamı: y
 
         */
-
         Scanner input = new Scanner(System.in);
 
         int sayac = 0;
@@ -43,6 +42,8 @@ public class C05_DoWhileLoops {
 
         } while (true);
         System.out.println("Girilen "+sayac+" sayının toplamı: "+toplam);
+
+
 
         //------------------------------------------
         //2.yol

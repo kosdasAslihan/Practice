@@ -19,8 +19,7 @@ public class C04_NestedTernary {
         System.out.println("Ikinci sayiyi giriniz: ");
         int sayi2 = scanner.nextInt();
 
-        Object sonuc = sayi1 == sayi2 ? ("Sayilar Esit") : (sayi1 > sayi2 ? (sayi1 * sayi1) : (sayi2 * sayi2));
+        Object sonuc = sayi1 == sayi2 ? "Sayilar esit" : ((sayi1 > sayi2) ? (sayi1 * sayi1) : (sayi2 * sayi2));
         System.out.println(sonuc);
-
     }
 }

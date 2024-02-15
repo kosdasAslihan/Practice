@@ -24,14 +24,14 @@ public class C01_IfElse {
             System.out.println(sayi1 + sayi2);
         } else if (sayi1 < 0 && sayi2 < 0) {
             System.out.println(sayi1 * sayi2);
-        } else if ((sayi1>0 && sayi2<0) || (sayi1<0 && sayi2>0)) {
-            System.out.println("Sayilarla islem yapilamiyor.");
-        /*} else if (sayi1 * sayi2 < 0) {
+        } else if ((sayi1 > 0 && sayi2 < 0) || (sayi1 < 0 && sayi2 > 0)) {
+            System.out.println("Sayilarla islem yapilamiyor");
+            /*
+            } else if (sayi1 * sayi2 < 0) {
             System.out.println("Islem yapilamiyor"); yukaridaki islem yerine bu islem de yazilabilirdi
-        */
-        }else {
+            */
+        } else {
             System.out.println("Yutan eleman");
         }
-
     }
 }

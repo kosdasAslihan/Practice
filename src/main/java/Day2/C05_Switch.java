@@ -23,13 +23,14 @@ public class C05_Switch {
             UST     = B
             HARIKA  = A
         */
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Puaninizi yaziniz: ");
         double puan = scanner.nextDouble();
 
         String seviye = "";
 
-        if (puan >= 0 && puan <1){
+        if (puan > 0 && puan < 1) {
             seviye = "KALDI";
         } else if (puan >= 1 && puan < 2) {
             seviye = "GECTI";
@@ -39,13 +40,12 @@ public class C05_Switch {
             seviye = "UST";
         }else if (puan >= 3.5 && puan <= 4) {
             seviye = "HARIKA";
-        }else {
-            seviye = "GECERSIZ";
+        }else{
+            seviye="GECERSIZ";
         }
-
-        switch (seviye) {
+        switch (seviye){
             case "KALDI":
-                System.out.println("f");
+                System.out.println("F");
                 break;
             case "GECTI":
                 System.out.println("D");
@@ -63,6 +63,5 @@ public class C05_Switch {
                 System.out.println("Gecerli bir not giriniz");
                 break;
         }
-
     }
 }

@@ -13,28 +13,25 @@ public class C01_ForLoops {
         aaabaaacaa
         */
 
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Bir kelime giriniz: ");
-        String kelime = scan.next();
+      Scanner scan = new Scanner(System.in);
+      System.out.println("Bir kelime giriniz: ");
+      String kelime = scan.next();
 
         /*
         Kelimenin lenght() değerini şart bloğuna eklemeliyiz.
         Karşılaştırıp yazdırmak
         charAt() methodu ile harf harf kontrol edelim
-
-         */
+        */
 
         int sayi = 0;
 
-        for (int i = 0; i < kelime.length(); i++) {
-
-            if (kelime.charAt(i) == 'c') {
+        for (int i = 0; i < kelime.length(); i++){
+            if (kelime.charAt(i) == 'c'){
                 break;
             }
-            if (kelime.charAt(i) == 'a') {
+            if (kelime.charAt(i) == 'a'){
                 sayi++;
             }
-
         }
         System.out.println(sayi);
 
