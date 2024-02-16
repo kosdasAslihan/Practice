@@ -1,4 +1,4 @@
-package Day4;
+package day4;
 
 public class C05_EnUzunKelime {
     public static void main(String[] args) {
