@@ -14,9 +14,8 @@ public class C04_FahrenheitToCelsius {
         double celsius = fahrenheitToCelsius(fahrenheit);
         System.out.println(celsius);
 
-
     }
     public static double fahrenheitToCelsius(double fahrenheit){
-        return (fahrenheit-32) / 1.8;
+        return (fahrenheit - 32) / 1.8;
     }
 }

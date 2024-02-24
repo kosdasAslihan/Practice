@@ -13,39 +13,39 @@ public class C03_HesapMakinesi {
         */
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("İşlem türünü belirtiniz ( +, -, *, / )");
+        System.out.println("İşlem türünü belirtiniz (+,-,*,/)");
         char islemTuru = scanner.next().charAt(0);
+
         if (islemTuru == '+' || islemTuru == '-' || islemTuru == '*' || islemTuru == '/') {
 
-            System.out.println("1. sayiyi giriniz:");
+            System.out.println("1. sayiyi giriniz: ");
             double sayi1 = scanner.nextDouble();
 
-            System.out.println("2. sayiyi giriniz:");
+            System.out.println("2. sayiyi giriniz: ");
             double sayi2 = scanner.nextDouble();
 
-            if (!(islemTuru == '/' && sayi2 == 0)){
+            if (!(islemTuru == '/' && sayi2 == 0)) {
                 hesapla(sayi1,sayi2,islemTuru);
+
+            } else {
+                System.out.println("Geçersiz işlem türü");
             }
-
-        } else {
-            System.out.println("Gecersiz islem turu");
         }
-
     }
 
-    public static void hesapla(double sayi1, double sayi2, char islemTuru) {
-        switch (islemTuru) {
+    public static void hesapla(double sayi1, double sayi2, char islemTuru){
+        switch (islemTuru){
             case '+':
-                System.out.println("Toplam: " + (sayi1 + sayi2));
+                System.out.println("Toplama: " + (sayi1+sayi2));
                 break;
             case '-':
-                System.out.println("Cikarma: " + (sayi1 - sayi2));
+                System.out.println("Çıkarma: " + (sayi1-sayi2));
                 break;
             case '*':
-                System.out.println("Carpma: " + (sayi1 * sayi2));
+                System.out.println("Çarpma: " + (sayi1*sayi2));
                 break;
             case '/':
-                System.out.println("Bolme: " + (sayi1 / sayi2));
+                System.out.println("Bölme: " + (sayi1/sayi2));
                 break;
         }
     }
