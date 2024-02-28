@@ -16,7 +16,7 @@ public class Child extends Parent{
         System.out.println(c.yas); //30
 
         Parent parent = new Child();
-        System.out.println(parent.);
+        System.out.println(parent);
 
     }
 }
